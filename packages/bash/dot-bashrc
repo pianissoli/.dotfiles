@@ -3,11 +3,14 @@
 
 PS1='[\W]\$ '
 
+alias bt='bluetoothctl'
+alias brt='brightnessctl'
+alias brtlo='brightnessctl set 20%'
+alias brtmd='brightnessctl set 50%'
+alias brthi='brightnessctl set 100%'
+
+export N_PREFIX=$HOME/.local/.n
+export PATH="$HOME/.config/nvim/nvim-linux-x86_64/bin:$HOME/.local/bin:$N_PREFIX/bin:$PATH"
 export EDITOR=$(which nvim)
-#export N_PREFIX=$HOME/.local/.n
-#export PATH=$HOME/.local/.npm-global/bin:$N_PREFIX/bin:$PATH
-export PATH="$HOME/.config/nvim/nvim-linux-x86_64/bin:$HOME/.local/scripts:$PATH"
 
-bind -x '"\C-f":"navigator.sh"'
-bind -x '"\C-t":"switch_actions.sh"'
-
+bind -x '"\C-f":"actions.sh"'
