@@ -6,7 +6,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = 83987930+joaopedropsilva@users.noreply.github.com
-	name = joaopedropsilva
+	name = pianissoli
 [init]
 	defaultBranch = main
 [core]
