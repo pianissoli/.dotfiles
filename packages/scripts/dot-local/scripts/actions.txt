@@ -1,4 +1,0 @@
-[bluetooth] Connect to EDIFIER W820NB (0c:ae:bd:5e:b7:4a)
-[bluetooth] Connect to Haylou GT1 Plus (1c:91:9d:0f:3e:8c)
-[bluetooth] Disconnect bluetooth
-
