@@ -20,6 +20,9 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+# lock the screen
+bindsym $mod+l exec betterlockscreen -l
+
 # kill window
 bindsym $mod+q kill
 
@@ -132,6 +135,12 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec --no-startup-id xidlehook \
+  --not-when-fullscreen \
+  --not-when-audio \
+  --timer 300 'betterlockscreen -l' '' \
+  --timer 300 'xset dpms force off' ''
 
 exec_always nitrogen --restore
 
