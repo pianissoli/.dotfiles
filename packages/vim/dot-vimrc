@@ -15,4 +15,9 @@ set termguicolors
 set signcolumn=yes
 set updatetime=50
 set colorcolumn=80
+
+let mapleader = " "
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+
 colorscheme habamax
