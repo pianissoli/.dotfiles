@@ -1,5 +1,5 @@
 gvim
-xss-lock
+xidlehook
 i3
 xorg
 xf86-video-vesa

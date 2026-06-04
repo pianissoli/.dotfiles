@@ -136,7 +136,12 @@ bar {
         status_command i3status
 }
 
-exec_always --no-startup-id xss-lock -- betterlockscreen -l dim
+exec --no-startup-id xidlehook \
+    --not-when-fullscreen \
+    --not-when-audio \
+    --timer 600 \
+    'betterlockscreen -l dim' \
+    ''
 
 exec_always nitrogen --restore
 
